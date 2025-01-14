@@ -20,5 +20,5 @@ jobs:
     steps:
       - name: Send Webhook
         run: |
-          curl -X POST -H "Content-Type: application/json" -d '{"action": "${{ github.event.action }}", "repository": "${{ github.repository }}", "ref": "${{ github.ref }}", "actor": "${{ github.actor }}", "timestamp": "${{ github.event.created_at }}"}' YOUR_WEBHOOK_URL
-R
+          curl -X POST -H "Content-Type: application/json" -d '{"action": "${{ github.event.action }}", "repository": "${{ github.repository }}", "ref": "${{ github.ref }}", "actor": "${{ github.actor }}", "timestamp": "${{ github.event.created_at }}"}' https://action-repo.onrender.com
+
